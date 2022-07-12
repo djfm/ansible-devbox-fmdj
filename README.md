@@ -13,3 +13,7 @@ Décrits [ici](https://docs.ansible.com/ansible/latest/network/getting_started/b
 #### Les noeuds de contrôle
 
 Font tourner les scripts tels que: `ansible-playbook` , `ansible`, `ansible-vault`
+
+#### Les noeuds hôtes
+
+À ce que je comprends, on n'a pas trop à y toucher, c'est justement le but, ils sont gérés par les noeuds de contrôle!
