@@ -17,3 +17,37 @@ Font tourner les scripts tels que: `ansible-playbook` , `ansible`, `ansible-vaul
 #### Les noeuds hôtes
 
 À ce que je comprends, on n'a pas trop à y toucher, c'est justement le but, ils sont gérés par les noeuds de contrôle!
+
+## Installation
+
+Ça va sans doute être différênt côté contrôle et côté hôte, on va voir.
+
+### Sur l'hôte
+
+On commence par installer ansible en suivant [le guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installation-guide).
+
+#### On vérifie les deps
+
+Sous un Ubuntu récent on fait juste:
+```
+sudo apt install python3-pip
+python3 -m pip -V # juste histoire d'avoir la version, j'ai la 22.qqch et la doc a la 21.des.brouettes, on va dire que ça va aller
+```
+
+#### Et on installe `Ansible`
+
+Passage oblibgé par la création d'un environnement virtuel pour python...
+```bash
+python3 -m pip install --user ansible
+# on vérifie
+ansible --version
+# ça foire chez moi parce que le binaire est pas en PATH
+# osef parce que ça fait partie des choses tidieuses à configurer,
+# je le note pour plus tard
+```bash
+
+### Trucs qu'on veut automatiser
+
+## La mise à jour du `PATH`
+
+- Àjouter `$HOME/.local/bin` à `$PATH`
