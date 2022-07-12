@@ -2,7 +2,12 @@
 
 All I know so far about `Ansible` is you can use it to configure a machine (virtual or not, but it seems to be more used for physical machines than for virtual ones).
 
-It is the equivalent of a programmable Sys Admin, or of Docker but for a machine - if understand correctly.
+It is the equivalent of a programmable Sys Admin, or of Docker but for a machine - if understand correctly.rr
+
+-------
+
+Tout ce que je sais pour l'instant d'`Ansible` c'est que c'est un peu comme un Admin Sys programmable, ou un Docker au niveau de la machine plutôt que
+celui du programme.
 
 ## Concepts de base
 
