@@ -25,7 +25,33 @@ Font tourner les scripts tels que: `ansible-playbook` , `ansible`, `ansible-vaul
 
 ## Installation
 
-Ça va sans doute être différênt côté contrôle et côté hôte, on va voir.
+Ansibible travaille en faisant transiter ses commandes via ssh, comme on le fairait à la main finalement,
+simple, éprouvé, universe et robuste.
+
+Donc côté client il n'y a qu'un serveur ssh à installer (et zut, moi qui voulais ajouter automatiquement la clef plublique
+de ma nouvelle machine de dev via `absible`, comment je fais alors? Bon une fois l'installation d'ssh ça doit se faire...)
+
+Du côté hôte, il n'y a qye `pytbon3` et son module `ansiblbe` à installer en plus d'SSH.
+Je rappèle à ceux qui ne le sauraient pas comment on installe un serveur (et un clien tant qu'à faire)
+
+## Installation du  serveur / client SSH (Secure Shell) sur toutes les machines du réseau
+
+Je supppose que vous disposez d'une distrubution proche d'un Ubuntu récent (donc variante de Debian plus ou moins récente),
+sinon vous sauriez déjà commennt on fait ça, ou alors vous n'utiiliseriez pas une distro non standarde :).
+
+**Pour s'assurer qu'on travaille avec un distro Ubuntu ou Debian récente**
+
+```bash
+  lsb_release -a
+```
+
+Moi ça me donne ça
+
+```
+```
+
+
+
 
 ### Sur l'hôte
 
@@ -56,3 +82,7 @@ ansible --version
 ## La mise à jour du `PATH`
 
 - Àjouter `$HOME/.local/bin` à `$PATH`
+
+## Lancer sa première commande d'un noeud de contrôle vers des hôtes
+
+
