@@ -81,7 +81,8 @@ ansible --version
 
 ## La mise à jour du `PATH`
 
-- Àjouter `$HOME/.local/bin` à `$PATH`
+- Ajouter `$HOME/.local/bin` à `$PATH`
+- Installer VSCode: `sudo snap install code --classic`
 
 ## Lancer sa première commande d'un noeud de contrôle vers des hôtes
 
