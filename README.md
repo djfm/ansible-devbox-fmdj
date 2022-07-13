@@ -90,11 +90,41 @@ distro qui se respecte.
 Supposons que je veuille me connecter à un serveur sur mon réseau local,
 par exemple au PC du salon depuis mon portable, il suffit de faire :
 
+**NOTE:** En règle générale, évitez de taper votre mot de passe dans une ligne de commande
+  avant d'avoir appuyé sur la touche `Enter` pour confirmer votre commande, c'est à la commande de
+  vous demander votre mot de passe, pas à vous de le lui donner. Le risque est que si vous entriez par
+  exemple `ssh toto:password@example.com` dans votre terminal, la ligne totale finira dans un log quelconque,
+  et votre mot de pa
+**Se connecter à un serveur distant**
 
+```bash
+  ssh <login>@<host>
+```
+
+**NOTE:** En règle générale, évitez de taper votre mot de passe dans une ligne de commande
+  avant d'avoir appuyé sur la touche `Enter` pour confirmer votre commande, c'est à la commande de
+  vous demander votre mot de passe, pas à vous de le lui donner. Le risque est que si vous entriez par
+  exemple `ssh toto:password@example.com` dans votre terminal, la ligne totale finira dans un log quelconque,
+  et votre mot de passe sera potentiellement divulgué si le log fuite.
 
 ### Sur l'hôte
 
 On commence par installer ansible en suivant [le guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installation-guide).
+Supposons que je veuille me connecter à un serveur sur mon réseau local,
+par exemple au PC du salon depuis mon portable, il suffit de faire :
+
+
+**Se connecter à un serveur distant**
+
+```bash
+  ssh <login>@<host>
+```
+
+**NOTE:** En règle générale, évitez de taper votre mot de passe dans une ligne de commande
+  avant d'avoir appuyé sur la touche `Enter` pour confirmer votre commande, c'est à la commande de
+  vous demander votre mot de passe, pas à vous de le lui donner. Le risque est que si vous entriez par
+  exemple `ssh toto:password@example.com` dans votre terminal, la ligne totale finira dans un log quelconque,
+  et votre mot de passe sera potentiellement divulgué si le log fuite.
 
 #### On vérifie les deps
 
@@ -124,4 +154,4 @@ ansible --version
 - Ajouter `$HOME/.local/bin` à `$PATH`
 - Installer VSCode: `sudo snap install code --classic`
 
-## Lancer sa première commande d'un noeud de contrôle vers des hôtese
+## Lancer sa première commande d'un noeud de contrôle vers des hôtes
