@@ -138,14 +138,17 @@ python3 -m pip -V # juste histoire d'avoir la version, j'ai la 22.qqch et la doc
 #### Et on installe `Ansible`
 
 Passage obligé par la création d'un environnement virtuel pour python...
+
 ```bash
 python3 -m pip install --user ansible
 # on vérifie
 ansible --version
-# ça foire chez moi parce que le binaire est pas en PATH
+# ça foi
+python3 -m pip -V # juste histoire d'avoir la version, j'ai la 22.qqch et la doc a la 21.des.brouettes, on va dire que ça va aller
+```re chez moi parce que le binaire est pas en PATH
 # osef parce que ça fait partie des choses fastidieuses à configurer,
 # je le note pour plus tard
-```bash
+```
 
 ### Trucs qu'on veut automatiser
 
