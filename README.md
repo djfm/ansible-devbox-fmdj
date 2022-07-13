@@ -1,8 +1,13 @@
-# ansible-devbox-fmdj
+# WIP - Ansible Primer
 
-All I know so far about `Ansible` is you can use it to configure a machine (virtual or not, but it seems to be more used for physical machines than for virtual ones).
+Ce tuto a pour but de m'apprendre à utiliser Ansible pour configurer rapidement une nouvelle machine
+de dev, mais je le mets en suspens par ce commit parce que j'ai trop de travail.
 
-It is the equivalent of a programmable Sys Admin, or of Docker but for a machine - if understand correctly.
+All I know so far about `Ansible` is you can use it to configure a machine (virtual or not, but it seems to[mer. 13 juil. 14:58:17] /home/djfm/projects/ansible-devbox-fmdj git:(main) dirty
+ be more used for physical machines than for virtual ones).
+
+It is the equivalent[mer. 13 juil. 14:58:17] /home/djfm/projects/ansible-devbox-fmdj git:(main) dirty
+ of a programmable Sys Admin, or of Docker but for a machine - if understand correctly.
 
 -------
 
@@ -158,3 +163,8 @@ python3 -m pip -V # juste histoire d'avoir la version, j'ai la 22.qqch et la doc
 - Installer VSCode: `sudo snap install code --classic`
 
 ## Lancer sa première commande d'un noeud de contrôle vers des hôtes
+
+### création d'un fichier d'inventaire
+
+Ç'est ce fichier qui garde trace de toutes les machines à configurer.
+Je suis la doc officielle pour créer le mien, qui est inclus dans [ce dépôt](inventory.yaml).
