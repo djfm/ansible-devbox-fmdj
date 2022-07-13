@@ -36,8 +36,8 @@ Je rappèle à ceux qui ne le sauraient pas comment on installe un serveur (et u
 
 ## Installation du  serveur / client SSH (Secure Shell) sur toutes les machines du réseau
 
-Je supppose que vous disposez d'une distrubution proche d'un Ubuntu récent (donc variante de Debian plus ou moins récente),
-sinon vous sauriez déjà commennt on fait ça, ou alors vous n'utiiliseriez pas une distro non standarde :).
+Je suppose que vous disposez d'une distribution proche d'un Ubuntu récent (donc variante de Debian plus ou moins récente),
+sinon vous sauriez déjà comment on fait ça, ou alors vous n’utiliseriez pas une distro non standard :).
 
 **Pour s'assurer qu'on travaille avec un distro Ubuntu ou Debian récente**
 
@@ -45,11 +45,50 @@ sinon vous sauriez déjà commennt on fait ça, ou alors vous n'utiiliseriez pas
   lsb_release -a
 ```
 
-Moi ça me donne ça
+Moi ça me donne ça :
 
-```
+```txt
+
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04 LTS
+Release:	22.04
+Codename:	jammy
 ```
 
+On est bien sur Ubuntu, ouf! Si vous êtes sur une autre distro, vous devriez vérifier que vous êtes bien sur une distro,
+
+Du moment que votre distro est bien basée sur Debian, tout devrait marcher
+comme indiqué dans ce mini tutoriel, si ce n'est pas le cas,
+il se peut que certaines commandes soient différentes et que vous deviez fouiller un peu la doc.
+
+
+**Petit point Culture G. sur Ubuntu :**
+
+- Les versions son numérotées comme ça avec leur année et mois de sortie.
+- Chaque version d'une année paire est une version dite LTS (Long Term Support)
+  et reçoit donc comme son nom l'indique des mises à jour plus longtemps que les autres.
+  [Voir ici sur le site officiel](https://www.ubuntu.com/news/lts-release-notes/)
+
+#### Le minimum vital à savoir sur SSH
+
+[SSH](https://fr.wikipedia.org/wiki/Secure_Shell) pour `secure shell` désigne à la fois un protocole et
+un ensemble de programmes permettant (entre autres) de se connecter
+en ligne de commande à un serveur distant, de façon tout à fait sécurisée.
+
+**Installation des paquets SSH**
+
+La commande suivante installe le serveur SSH standard :
+
+```bash
+  sudo apt install openssh-server
+```
+
+Pas la peine d'installer, le client, il est déjà installé dans toute
+distro qui se respecte.
+
+Supposons que je veuille me connecter à un serveur sur mon réseau local,
+par exemple au PC du salon depuis mon portable, il suffit de faire :
 
 
 
@@ -67,13 +106,13 @@ python3 -m pip -V # juste histoire d'avoir la version, j'ai la 22.qqch et la doc
 
 #### Et on installe `Ansible`
 
-Passage oblibgé par la création d'un environnement virtuel pour python...
+Passage obligé par la création d'un environnement virtuel pour python...
 ```bash
 python3 -m pip install --user ansible
 # on vérifie
 ansible --version
 # ça foire chez moi parce que le binaire est pas en PATH
-# osef parce que ça fait partie des choses tidieuses à configurer,
+# osef parce que ça fait partie des choses fastidieuses à configurer,
 # je le note pour plus tard
 ```bash
 
