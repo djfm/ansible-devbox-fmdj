@@ -161,6 +161,7 @@ python3 -m pip -V # juste histoire d'avoir la version, j'ai la 22.qqch et la doc
 
 - Ajouter `$HOME/.local/bin` à `$PATH`
 - Installer VSCode: `sudo snap install code --classic`
+- Installer node: `sudo snap install --channel=18/stable --classic`
 
 ## Lancer sa première commande d'un noeud de contrôle vers des hôtes
 
